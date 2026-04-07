@@ -46,7 +46,9 @@
  *  3. Else
  * 
  *  An else statement will provide a block of code to be executed if both the if and else-if statements prior in the 
- *  conditional chain fail to execute. Else statements will always be at the end of a chain.
+ *  conditional chain fail to execute. Else statements will always be at the end of a chain and will never have a 
+ *  conditional attached to them- they will instead provide the return or resolution if the other conditions in the
+ *  chain are not met.
  * 
  * */
      //init num to the value of 5 
@@ -65,7 +67,7 @@
 /* *
  *  4. Switch
  *   
- *  A switch statement is very similar to a condtional chain using if, else-if, and else- but there are some key differences
+ *  A switch statement is very similar to a conditional chain using if, else-if, and else- but there are some key differences
  *  that set it apart. Firstly, unlike a conditional which is evaluating a condition to see if it is true or false, a switch 
  *  statement will evaluate a value against a set of provided cases- if a case matches the provided value specifically, it 
  *  will execute the statement provided by that case, and exit when it hits a break statement. If it does not hit a break 

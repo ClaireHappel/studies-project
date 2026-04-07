@@ -1,13 +1,11 @@
 /* *
  *  0. LOOPS
  *  
- *  Loops give us to ability to iterate over something repeatedly. There are many different kinds of loops, but they all 
- *  achieve the same goal of repeating an action some number of times. The different loop mechanisms offer different 
- *  ways to determine the start and end points of the loop. Certain loops are used over others depending on what 
- *  goal we are trying to accomplish and what data types we are working with. Data types such as strings and arrays,
- *  for example, are often iterated over with a for loop. Objects meanwhile, often are iterated over with a for-in
- *  loop. While loops can be used when we are unsure of how many times we will need to loop while for loops are best
- *  used when we know the number of times we want to loop.
+ *  Loops allow us to iterate over something repeatedly. There are many types loops, but all iterate a number of 
+ *  times repeatedly. Certain loops are used over others depending on the goal we are trying to accomplish and 
+ *  what data types we are working with. Data types such as strings and arrays, for example, might use a for loop. 
+ *  Objects can be looped through using a for-in loop. While loops can be used when we are unsure of how many times
+ *  we will need to loop while for loops are best used when we know the number of times we want to loop. 
  *  
  * */
 
@@ -105,7 +103,7 @@
      let loopReverse = (num) => {
 
         let numArray = []; // an empty array
-        
+
         for (let i = num; i >= 0; i -= 2) {  // starting at num, stop is when i is greater than or equal to 0, and each loop i is decremented by 2
             numArray.push(i); // then we push i to our storage array
         }
